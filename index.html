@@ -47,6 +47,7 @@
     .section{padding:7rem 0}
     .mono{font-family:var(--font-mono);font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase}
     .divider{height:1px;background:var(--light-border-subtle);border:none}
+
     /* NAV */
     nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(11,11,11,0.92);backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,0.06)}
     nav .container{display:flex;justify-content:space-between;align-items:center;height:58px}
@@ -59,6 +60,7 @@
     .nav-cta:hover{background:var(--accent)!important;color:var(--dark-bg)!important}
     .nav-toggle{display:none;background:none;border:1px solid rgba(255,255,255,0.14);border-radius:12px;cursor:pointer;padding:0.5rem}
     .nav-toggle span{display:block;width:18px;height:1px;background:var(--dark-text);margin:5px 0}
+
     /* HERO (dark) */
     .hero{background:var(--dark-bg);padding:12rem 0 6rem;position:relative;overflow:hidden}
     .hero::before{content:'';position:absolute;top:-10%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(201,160,108,0.07) 0%,transparent 60%);pointer-events:none}
@@ -75,18 +77,31 @@
     .btn-h-primary:hover{background:#d4ad7a}
     .btn-h-ghost{display:inline-flex;align-items:center;gap:0.5rem;background:transparent;color:var(--dark-text-secondary);font-family:var(--font-mono);font-size:0.68rem;letter-spacing:0.06em;text-transform:uppercase;padding:0.9rem 1.8rem;text-decoration:none;border:1px solid var(--dark-border);transition:all 0.2s;border-radius:999px}
     .btn-h-ghost:hover{color:var(--dark-text);border-color:var(--dark-text-muted)}
+
     /* CREDENTIALS (dark) */
     .cred-bar{background:var(--dark-bg);border-top:1px solid rgba(255,255,255,0.05);padding:2.5rem 0 3rem}
     .cred-row{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:2rem}
     .cred-item{text-align:center;flex:1;min-width:130px}
     .cred-num{font-family:var(--font-display);font-size:2.8rem;font-weight:400;color:var(--dark-text);line-height:1;margin-bottom:0.5rem}
+    .cred-num--sm{font-size:1.8rem}
     .cred-label{font-family:var(--font-mono);font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--dark-text-secondary)}
     .cred-sep{width:1px;height:36px;background:var(--dark-border);flex-shrink:0}
+
     /* LIGHT BUTTONS */
     .btn-primary{display:inline-flex;align-items:center;gap:0.5rem;background:var(--light-text);color:var(--light-bg);font-family:var(--font-mono);font-size:0.68rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;padding:0.9rem 1.8rem;text-decoration:none;border:none;cursor:pointer;transition:all 0.25s;border-radius:999px}
     .btn-primary:hover{background:var(--accent);color:#fff}
     .btn-ghost{display:inline-flex;align-items:center;gap:0.5rem;background:transparent;color:var(--light-text-secondary);font-family:var(--font-mono);font-size:0.68rem;letter-spacing:0.06em;text-transform:uppercase;padding:0.9rem 1.8rem;text-decoration:none;border:1px solid var(--light-border);transition:all 0.2s;border-radius:999px}
     .btn-ghost:hover{color:var(--light-text);border-color:var(--light-text-muted)}
+    .btn-ghost--sm{font-size:0.62rem;padding:0.7rem 1.4rem}
+
+    /* ROUTING */
+    .routing-section{padding:4rem 0;background:var(--light-bg)}
+    .routing-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--light-border);border:1px solid var(--light-border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+    .routing-card{background:var(--light-bg-card);padding:2.5rem}
+    .routing-card .mono{color:var(--accent);margin-bottom:0.8rem}
+    .routing-card h3{font-family:var(--font-display);font-size:1.4rem;font-weight:500;margin-bottom:0.7rem}
+    .routing-card p{font-size:0.9rem;color:var(--light-text-secondary);font-weight:300;line-height:1.7;margin-bottom:1.2rem}
+
     /* AI vs HUMAN SECTION */
     .split-section{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--light-border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
     .split-col{padding:3rem 2.5rem}
@@ -97,6 +112,7 @@
     .split-item{padding:0.8rem 0;border-bottom:1px solid var(--light-border-subtle);font-size:0.88rem;color:var(--light-text-secondary);font-weight:300;line-height:1.6}
     .split-item:last-child{border-bottom:none}
     .split-item strong{color:var(--light-text);font-weight:500}
+
     /* PHILOSOPHY */
     .phil-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--light-border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
     .phil-card{padding:2.5rem 2rem;border-right:1px solid var(--light-border);background:var(--light-bg-card);transition:background 0.3s}
@@ -105,6 +121,7 @@
     .phil-num{font-family:var(--font-display);font-size:1.6rem;font-weight:300;color:var(--accent);margin-bottom:1rem;opacity:0.45}
     .phil-card h3{font-family:var(--font-display);font-size:1.3rem;font-weight:500;margin-bottom:0.7rem;line-height:1.3;color:var(--light-text)}
     .phil-card p{font-size:0.85rem;color:var(--light-text-secondary);line-height:1.7;font-weight:300}
+
     /* TRACK RECORD */
     .track-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--light-border);border:1px solid var(--light-border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
     .track-card{background:var(--light-bg-card);padding:2.8rem;transition:background 0.3s}
@@ -113,10 +130,17 @@
     .track-metric{font-family:var(--font-display);font-size:3rem;font-weight:400;color:var(--accent);line-height:1;margin-bottom:0.7rem}
     .track-context{font-size:0.98rem;color:var(--light-text-secondary);margin-bottom:1.2rem;line-height:1.6;font-weight:300}
     .track-detail{font-size:0.82rem;color:var(--light-text-muted);line-height:1.65;border-top:1px solid var(--light-border-subtle);padding-top:1rem;font-weight:300}
+
+    /* OUTCOMES */
+    .outcomes-grid{margin-top:2.5rem;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--light-border);border:1px solid var(--light-border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+    .outcome-item{background:var(--light-bg-card);padding:1.8rem;text-align:center}
+    .outcome-num{font-family:var(--font-display);font-size:1.3rem;font-weight:500;color:var(--accent);margin-bottom:0.4rem}
+    .outcome-label{font-size:0.82rem;color:var(--light-text-secondary);font-weight:300;line-height:1.5}
+
     /* SERVICES */
     .svc-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:3.5rem;flex-wrap:wrap;gap:2rem}
     .svc-header h2{font-family:var(--font-display);font-size:clamp(2rem,4vw,3rem);font-weight:300;max-width:550px}
-    .svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--light-border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+    .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--light-border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
     .svc-card{background:var(--light-bg-card);padding:2.5rem 2rem;display:flex;flex-direction:column;transition:background 0.3s}
     .svc-card:hover{background:var(--light-bg-card-hover)}
     .svc-tag{font-family:var(--font-mono);font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);margin-bottom:1.3rem}
@@ -126,12 +150,24 @@
     .svc-meta dt{font-family:var(--font-mono);font-size:0.55rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--light-text-muted);margin-bottom:0.2rem}
     .svc-meta dd{font-size:0.85rem;color:var(--light-text-secondary);margin-bottom:0.8rem;font-weight:300}
     .svc-price{font-family:var(--font-display);font-size:1.25rem;font-weight:500;color:var(--light-text)!important}
+
     /* CTA (dark) */
     .cta-band{background:var(--dark-bg);text-align:center;padding:5.5rem 2rem}
     .cta-band h2{font-family:var(--font-display);font-size:clamp(2rem,4vw,3rem);font-weight:300;margin-bottom:1rem;color:var(--dark-text)}
     .cta-band p{color:var(--dark-text-secondary);font-size:1rem;margin-bottom:2.5rem;max-width:520px;margin-left:auto;margin-right:auto;line-height:1.7;font-weight:300}
     .btn-cta{display:inline-flex;align-items:center;gap:0.5rem;background:var(--accent);color:var(--dark-bg);font-family:var(--font-mono);font-size:0.68rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;padding:0.9rem 1.8rem;text-decoration:none;border:none;cursor:pointer;transition:all 0.25s;border-radius:999px}
     .btn-cta:hover{background:#d4ad7a}
+
+    /* INVESTORS */
+    .investor-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--light-border);border:1px solid var(--light-border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+    .investor-card{background:var(--light-bg-card);padding:2.5rem}
+    .investor-card .mono{color:var(--accent);margin-bottom:0.8rem}
+    .investor-card p{font-size:0.92rem;color:var(--light-text-secondary);font-weight:300;line-height:1.8}
+    .investor-card p+p{margin-top:1rem}
+    .investor-card strong{color:var(--light-text);font-weight:500}
+    .investor-cta{text-align:center;margin-top:2rem}
+    .investor-cta p{font-size:0.9rem;color:var(--light-text-secondary);font-weight:300;margin-bottom:1rem}
+
     /* ABOUT */
     .about-layout{display:grid;grid-template-columns:1.15fr 0.85fr;gap:4rem;align-items:start}
     .about-text h2{font-family:var(--font-display);font-size:clamp(2rem,3.5vw,2.8rem);font-weight:300;margin-bottom:1.8rem;line-height:1.2}
@@ -150,6 +186,13 @@
     .lang-row{display:flex;gap:1.5rem}
     .lang-item{font-size:0.88rem;color:var(--light-text-secondary);font-weight:300}
     .lang-item span{font-family:var(--font-mono);font-size:0.55rem;color:var(--light-text-muted);text-transform:uppercase;letter-spacing:0.08em;display:block;margin-bottom:0.1rem}
+
+    /* SECTION HEADERS (shared) */
+    .section-header{margin-bottom:3.5rem}
+    .section-header .mono{color:var(--light-text-muted);margin-bottom:0.8rem}
+    .section-header h2{font-family:var(--font-display);font-size:clamp(2rem,4vw,3rem);font-weight:300;max-width:700px}
+    .section-header h2--wide{max-width:none}
+
     /* CONTACT */
     .contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:4rem}
     .contact-info h2{font-family:var(--font-display);font-size:2.4rem;font-weight:300;margin-bottom:1.2rem}
@@ -165,26 +208,6 @@
     .fg input:focus,.fg textarea:focus,.fg select:focus{border-color:var(--accent)}
     .fg textarea{resize:vertical;min-height:100px}
     .fg select option{background:var(--light-bg-card)}
-    /* FOOTER (dark) */
-    footer{background:var(--dark-bg);border-top:1px solid rgba(255,255,255,0.05);padding:2.5rem 0}
-    .footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
-    .footer-copy{font-family:var(--font-mono);font-size:0.58rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--dark-text-muted)}
-    .footer-links{display:flex;gap:1.5rem}
-    .footer-links a{font-family:var(--font-mono);font-size:0.58rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--dark-text-muted);text-decoration:none}
-    .footer-links a:hover{color:var(--dark-text-secondary)}
-
-    /* ROUTING */
-    .routing-section{padding:4rem 0;background:var(--light-bg)}
-    .routing-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--light-border);border:1px solid var(--light-border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
-    .routing-card{background:var(--light-bg-card);padding:2.5rem}
-    .routing-card h3{font-family:var(--font-display);font-size:1.4rem;font-weight:500;margin-bottom:0.7rem}
-    .routing-card p{font-size:0.9rem;color:var(--light-text-secondary);font-weight:300;line-height:1.7;margin-bottom:1.2rem}
-
-    /* OUTCOMES */
-    .outcomes-grid{margin-top:2.5rem;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--light-border);border:1px solid var(--light-border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
-    .outcome-item{background:var(--light-bg-card);padding:1.8rem;text-align:center}
-    .outcome-num{font-family:var(--font-display);font-size:1.8rem;font-weight:500;color:var(--accent);margin-bottom:0.4rem}
-    .outcome-label{font-size:0.82rem;color:var(--light-text-secondary);font-weight:300;line-height:1.5}
 
     /* CONTACT STEPS */
     .contact-steps{margin-bottom:2rem}
@@ -194,18 +217,27 @@
     .contact-step strong{font-size:0.92rem}
     .contact-step p{font-size:0.85rem;color:var(--light-text-secondary);font-weight:300;margin:0.2rem 0 0}
 
-    /* SKIP LINK */
-    .skip-link{position:absolute;top:-100%;left:1rem;background:var(--accent);color:var(--dark-bg);padding:0.5rem 1rem;font-family:var(--font-mono);font-size:0.75rem;z-index:200;border-radius:0 0 8px 8px;text-decoration:none}
-    .skip-link:focus{top:0}
-
     /* FORM SUBMIT */
     .btn-submit{border:none;cursor:pointer;width:100%;justify-content:center;border-radius:999px}
     .btn-submit:disabled{opacity:0.6;cursor:default}
 
+    /* SKIP LINK */
+    .skip-link{position:absolute;top:-100%;left:1rem;background:var(--accent);color:var(--dark-bg);padding:0.5rem 1rem;font-family:var(--font-mono);font-size:0.75rem;z-index:200;border-radius:0 0 8px 8px;text-decoration:none}
+    .skip-link:focus{top:0}
+
+    /* FOOTER (dark) */
+    footer{background:var(--dark-bg);border-top:1px solid rgba(255,255,255,0.05);padding:2.5rem 0}
+    .footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+    .footer-copy{font-family:var(--font-mono);font-size:0.58rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--dark-text-muted)}
+    .footer-links{display:flex;gap:1.5rem}
+    .footer-links a{font-family:var(--font-mono);font-size:0.58rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--dark-text-muted);text-decoration:none}
+    .footer-links a:hover{color:var(--dark-text-secondary)}
+
     .reveal{opacity:0;transform:translateY(14px);transition:opacity 0.5s ease,transform 0.5s ease}
     .reveal.visible{opacity:1;transform:translateY(0)}
+
     @media(max-width:1024px){
-      .split-section,.phil-grid,.track-grid,.about-layout,.contact-layout,.routing-grid{grid-template-columns:1fr}
+      .split-section,.phil-grid,.track-grid,.about-layout,.contact-layout,.routing-grid,.investor-grid{grid-template-columns:1fr}
       .svc-grid,.outcomes-grid{grid-template-columns:1fr 1fr}
       .split-col:first-child{border-right:none;border-bottom:1px solid var(--light-border)}
       .phil-card{border-right:none;border-bottom:1px solid var(--light-border)}
@@ -235,6 +267,7 @@
         <a href="#approach">Approach</a>
         <a href="#track-record">Track Record</a>
         <a href="#services">Services</a>
+        <a href="#investors">Investors</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
         <a href="https://calendly.com/rm-advisory/30min" target="_blank" class="nav-cta">Book a Session</a>
@@ -248,16 +281,16 @@
   <!-- HERO (dark) -->
   <section class="hero">
     <div class="container">
-      <div class="hero-eyebrow">Revenue Architecture &bull; GTM Systems &bull; Fractional CRO</div>
-      <h1>I build <em>revenue engines</em> — and the leaders who run them</h1>
+      <div class="hero-eyebrow">Revenue Architecture &bull; P&amp;L-led Growth &bull; Board-level Commercial Oversight</div>
+      <h1>I build <em>revenue engines</em> &mdash; and the leaders who run them</h1>
       <p class="hero-sub">
-        20+ years building revenue systems across <strong>fintech, capital markets, and B2B SaaS</strong> — from global brokerages and trading platforms to enterprise software scale-ups. I design commercial engines that deliver outcomes, not just pipeline.
+        20+ years building revenue systems across <strong>fintech, capital markets, and B2B SaaS</strong> &mdash; from global brokerages and trading platforms to enterprise software scale-ups. I design commercial engines that deliver outcomes, not just pipeline.
       </p>
       <p class="hero-kicker">
-        Currently leading GTM execution at a global multi-asset brokerage. Previously scaled revenue at Salesforce, and built teams across blockchain infrastructure, Big Data fintech, and PE-backed software. <em>I teach teams to leverage AI where it creates real advantage — and bring the operator judgment no model can replicate.</em>
+        Currently leading GTM execution at a global multi-asset brokerage. Previously scaled revenue at Salesforce and built teams across fintech, blockchain infrastructure, and enterprise data platforms. <em>I teach teams to leverage AI where it creates real advantage &mdash; and bring the operator judgment no model can replicate.</em>
       </p>
       <div class="hero-actions">
-        <a href="https://calendly.com/rm-advisory/30min" target="_blank" class="btn-h-primary">Book a 30-min working session &rarr;</a>
+        <a href="https://calendly.com/rm-advisory/30min" target="_blank" class="btn-h-primary">30-minute revenue working session &rarr;</a>
         <a href="#approach" class="btn-h-ghost">See the approach</a>
       </div>
     </div>
@@ -267,60 +300,62 @@
   <div class="cred-bar">
     <div class="container">
       <div class="cred-row">
-        <div class="cred-item"><div class="cred-num">20+</div><div class="cred-label">Years in Revenue Leadership</div></div>
+        <div class="cred-item"><div class="cred-num">20+</div><div class="cred-label">Years in Commercial Leadership</div></div>
         <div class="cred-sep"></div>
-        <div class="cred-item"><div class="cred-num">&euro;20M+</div><div class="cred-label">ARR Built &amp; Managed</div></div>
+        <div class="cred-item"><div class="cred-num">$Bn+</div><div class="cred-label">AUM Under Commercial Oversight</div></div>
         <div class="cred-sep"></div>
-        <div class="cred-item"><div class="cred-num">70+</div><div class="cred-label">AEs Led at Salesforce</div></div>
+        <div class="cred-item"><div class="cred-num">200+</div><div class="cred-label">Revenue Professionals Led</div></div>
         <div class="cred-sep"></div>
         <div class="cred-item"><div class="cred-num">5</div><div class="cred-label">Regions Sold Across</div></div>
+        <div class="cred-sep"></div>
+        <div class="cred-item"><div class="cred-num cred-num--sm">Full P&amp;L</div><div class="cred-label">Ownership Across Two Companies</div></div>
       </div>
     </div>
   </div>
 
-  <!-- ROUTING (light) — handle two visitor types -->
+  <!-- ROUTING (light) -->
   <section class="routing-section">
     <div class="container">
       <div class="routing-grid">
         <div class="routing-card">
-          <div class="mono" style="color:var(--accent);margin-bottom:0.8rem;">We haven't met yet</div>
+          <div class="mono">We haven't met yet</div>
           <h3>You need to know if I'm the right person to fix your revenue system.</h3>
-          <p>Start with the approach and track record below — then book a 30-minute working session where we'll pressure-test a live deal and identify your top failure mode. No pitch, just signal.</p>
-          <a href="#approach" class="btn-ghost" style="font-size:0.62rem;padding:0.7rem 1.4rem;">See the approach &rarr;</a>
+          <p>Start with the approach and track record below &mdash; then book a 30-minute working session where we'll pressure-test a live deal and identify your top failure mode. No pitch, just signal.</p>
+          <a href="#approach" class="btn-ghost btn-ghost--sm">See the approach &rarr;</a>
         </div>
         <div class="routing-card">
-          <div class="mono" style="color:var(--accent);margin-bottom:0.8rem;">We've already spoken</div>
+          <div class="mono">We've already spoken</div>
           <h3>You want a clear view of how we'd work together.</h3>
           <p>Jump straight to the engagement models, or reply to my last email and I'll send a concrete proposal for the right model based on what we discussed.</p>
-          <a href="#services" class="btn-ghost" style="font-size:0.62rem;padding:0.7rem 1.4rem;">View engagement models &rarr;</a>
+          <a href="#services" class="btn-ghost btn-ghost--sm">View engagement models &rarr;</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- AI vs HUMAN (light) — the core differentiator -->
+  <!-- AI vs HUMAN (light) -->
   <section class="section" id="approach">
     <div class="container">
-      <div style="margin-bottom:3.5rem;">
-        <div class="mono" style="color:var(--light-text-muted);margin-bottom:0.8rem;">The Approach</div>
-        <h2 style="font-family:var(--font-display);font-size:clamp(2rem,4vw,3rem);font-weight:300;max-width:700px;">A revenue operating system built on judgment — accelerated by AI.</h2>
+      <div class="section-header">
+        <div class="mono">The Approach</div>
+        <h2>A revenue operating system built on judgment &mdash; accelerated by AI.</h2>
       </div>
       <div class="split-section reveal">
         <div class="split-col">
           <h3>Where <span>AI</span> does the heavy lifting</h3>
-          <div class="split-item"><strong>Discovery prep &amp; research</strong> — AI synthesises company financials, org charts, regulatory filings, and competitive landscapes before your rep even picks up the phone.</div>
-          <div class="split-item"><strong>Competitive intelligence</strong> — Real-time monitoring of competitor pricing, product launches, and market positioning across fintech and SaaS landscapes. Automated, not manual.</div>
-          <div class="split-item"><strong>CRM hygiene &amp; pipeline analysis</strong> — AI flags stuck deals, missing next steps, misaligned stages, and sandbagging across regions. Weekly, automatically.</div>
-          <div class="split-item"><strong>Content &amp; outbound at speed</strong> — Personalised sequences, proposal drafts, and meeting prep for institutional clients or enterprise buyers — generated in minutes, not hours.</div>
-          <div class="split-item"><strong>Sales controlling &amp; dashboards</strong> — Automated performance visibility across regions, products, and client segments so leadership makes decisions from data, not gut feel.</div>
+          <div class="split-item"><strong>Discovery prep &amp; research</strong> &mdash; AI synthesises company financials, org charts, regulatory filings, and competitive landscapes before your rep even picks up the phone.</div>
+          <div class="split-item"><strong>Competitive intelligence</strong> &mdash; Real-time monitoring of competitor pricing, product launches, and market positioning across fintech and SaaS landscapes. Automated, not manual.</div>
+          <div class="split-item"><strong>CRM hygiene &amp; pipeline analysis</strong> &mdash; AI flags stuck deals, missing next steps, misaligned stages, and sandbagging across regions. Weekly, automatically.</div>
+          <div class="split-item"><strong>Content &amp; outbound at speed</strong> &mdash; Personalised sequences, proposal drafts, and meeting prep for institutional clients or enterprise buyers &mdash; generated in minutes, not hours.</div>
+          <div class="split-item"><strong>Sales controlling &amp; dashboards</strong> &mdash; Automated performance visibility across regions, products, and client segments so leadership makes decisions from data, not gut feel.</div>
         </div>
         <div class="split-col">
           <h3>Where <span>humans</span> remain irreplaceable</h3>
-          <div class="split-item"><strong>Deal strategy &amp; qualification judgment</strong> — Is this deal real? Is the champion actually a champion? Is the compelling event manufactured or genuine? This takes pattern recognition from thousands of deals.</div>
-          <div class="split-item"><strong>Reading the room</strong> — Organisational politics, executive body language, the unsaid objection, the blocker nobody named. No model sees this.</div>
-          <div class="split-item"><strong>Coaching &amp; developing people</strong> — Helping a rep evolve from tactical seller to strategic operator. Building confidence after a lost deal. Knowing when to push and when to back off.</div>
-          <div class="split-item"><strong>Designing the system itself</strong> — Which stages, which fields, which cadence, which metrics matter for <em>this specific business</em> at <em>this specific stage</em>. Context is everything.</div>
-          <div class="split-item"><strong>Accountability under pressure</strong> — Operating under board and investor scrutiny. Making the call when the data is ambiguous. Owning the number.</div>
+          <div class="split-item"><strong>Deal strategy &amp; qualification judgment</strong> &mdash; Is this deal real? Is the champion actually a champion? Is the compelling event manufactured or genuine? This takes pattern recognition from thousands of deals.</div>
+          <div class="split-item"><strong>Reading the room</strong> &mdash; Organisational politics, executive body language, the unsaid objection, the blocker nobody named. No model sees this.</div>
+          <div class="split-item"><strong>Coaching &amp; developing people</strong> &mdash; Helping a rep evolve from tactical seller to strategic operator. Building confidence after a lost deal. Knowing when to push and when to back off.</div>
+          <div class="split-item"><strong>Designing the system itself</strong> &mdash; Which stages, which fields, which cadence, which metrics matter for <em>this specific business</em> at <em>this specific stage</em>. Context is everything.</div>
+          <div class="split-item"><strong>Accountability under pressure</strong> &mdash; Operating under board and investor scrutiny. Making the call when the data is ambiguous. Owning the number.</div>
         </div>
       </div>
     </div>
@@ -331,25 +366,25 @@
   <!-- PHILOSOPHY (light) -->
   <section class="section" id="philosophy">
     <div class="container">
-      <div style="margin-bottom:3.5rem;">
-        <div class="mono" style="color:var(--light-text-muted);margin-bottom:0.8rem;">Operating Philosophy</div>
-        <h2 style="font-family:var(--font-display);font-size:clamp(2rem,4vw,3rem);font-weight:300;max-width:650px;">Take what works from every framework. Discard the dogma.</h2>
+      <div class="section-header">
+        <div class="mono">Operating Philosophy</div>
+        <h2 style="max-width:650px;">Take what works from every framework. Discard the dogma.</h2>
       </div>
       <div class="phil-grid">
         <div class="phil-card reveal">
           <div class="phil-num">I</div>
           <h3>Stages and exit criteria, not methodology worship</h3>
-          <p>MEDDPICC, Sandler, Challenger — each captures something real. We extract the fields that matter (compelling event, champion, economic buyer, close plan) and embed them into clearly defined stages with customer-verified exit criteria. Then we use AI to auto-populate and enforce them. Structure without religion.</p>
+          <p>MEDDPICC, Sandler, Challenger &mdash; each captures something real. We extract the fields that matter (compelling event, champion, economic buyer, close plan) and embed them into clearly defined stages with customer-verified exit criteria. Then we use AI to auto-populate and enforce them. Structure without religion.</p>
         </div>
         <div class="phil-card reveal">
           <div class="phil-num">II</div>
           <h3>AI-augmented systems, human-owned decisions</h3>
-          <p>We teach your team to use AI for research, prep, and pipeline hygiene — the work that used to eat 40% of a rep's week. Then we redeploy that time into the activities only humans can do: relationship building, deal strategy, and executive conversations.</p>
+          <p>We teach your team to use AI for research, prep, and pipeline hygiene &mdash; the work that used to eat 40% of a rep's week. Then we redeploy that time into the activities only humans can do: relationship building, deal strategy, and executive conversations.</p>
         </div>
         <div class="phil-card reveal">
           <div class="phil-num">III</div>
           <h3>Skill capacity is the real bottleneck</h3>
-          <p>Knowing what to do isn't enough. Your team needs the ability to execute — discovery, multi-threading, champion development, executive alignment. We build this through coaching, deal reviews, and deliberate practice. AI accelerates learning; humans do the learning.</p>
+          <p>Knowing what to do isn't enough. Your team needs the ability to execute &mdash; discovery, multi-threading, champion development, executive alignment. We build this through coaching, deal reviews, and deliberate practice. AI accelerates learning; humans do the learning.</p>
         </div>
       </div>
     </div>
@@ -360,9 +395,9 @@
   <!-- TRACK RECORD (light) -->
   <section class="section" id="track-record">
     <div class="container">
-      <div style="margin-bottom:3.5rem;">
-        <div class="mono" style="color:var(--light-text-muted);margin-bottom:0.8rem;">Track Record</div>
-        <h2 style="font-family:var(--font-display);font-size:clamp(2rem,4vw,3rem);font-weight:300;">What the work looks like in practice</h2>
+      <div class="section-header">
+        <div class="mono">Track Record</div>
+        <h2>What the work looks like in practice</h2>
       </div>
       <div class="track-grid">
         <div class="track-card reveal">
@@ -393,20 +428,20 @@
       <!-- Typical outcomes -->
       <div class="outcomes-grid">
         <div class="outcome-item">
-          <div class="outcome-num">30&ndash;40%</div>
-          <div class="outcome-label">Less non-selling admin via AI-powered pipeline hygiene</div>
+          <div class="outcome-num">Admin Reduction</div>
+          <div class="outcome-label">Reduced rep admin time through AI-powered pipeline automation</div>
         </div>
         <div class="outcome-item">
-          <div class="outcome-num">&plusmn;10%</div>
-          <div class="outcome-label">Forecast accuracy within 90 days of engagement</div>
+          <div class="outcome-num">Forecast Reliability</div>
+          <div class="outcome-label">Improved forecast accuracy through stage discipline and conversion data</div>
         </div>
         <div class="outcome-item">
-          <div class="outcome-num">&uarr; Stage 2&rarr;4</div>
-          <div class="outcome-label">Higher conversion with enforced exit criteria</div>
+          <div class="outcome-num">Stage Conversion</div>
+          <div class="outcome-label">Higher stage conversion with enforced exit criteria</div>
         </div>
         <div class="outcome-item">
-          <div class="outcome-num">&darr; Slippage</div>
-          <div class="outcome-label">Fewer slipped deals through deal qualification discipline</div>
+          <div class="outcome-num">Lower Slippage</div>
+          <div class="outcome-label">Fewer slipped deals via qualification discipline and close plans</div>
         </div>
       </div>
     </div>
@@ -425,26 +460,20 @@
         <div class="svc-card reveal">
           <div class="svc-tag">Diagnostic</div>
           <h3>Revenue System Audit</h3>
-          <p class="svc-desc">AI pre-analyses your pipeline data, CRM structure, and competitive position before we meet. Then I spend 90 minutes doing what AI can't — pressure-testing your deals, reading your team dynamics, and identifying the 3 systemic failures no dashboard will show you.</p>
-          <div class="svc-meta"><dl><dt>What's different</dt><dd>AI does the data work. I do the judgment work. You get both.</dd><dt>Deliverable</dt><dd>Revenue system scorecard, prioritised action plan, AI workflow recommendations for your team</dd><dt>Investment</dt><dd class="svc-price">From &euro;750</dd></dl></div>
+          <p class="svc-desc">AI pre-analyses your pipeline data, CRM structure, and competitive position before we meet. Then I spend 90 minutes doing what AI can't &mdash; pressure-testing your deals, reading your team dynamics, and identifying the 3 systemic failures no dashboard will show you.</p>
+          <div class="svc-meta"><dl><dt>What's different</dt><dd>AI does the data work. I do the judgment work. You get both.</dd><dt>Deliverable</dt><dd>Revenue system scorecard, prioritised action plan, AI workflow recommendations</dd><dt>Investment</dt><dd class="svc-price">From &euro;750</dd></dl></div>
         </div>
         <div class="svc-card reveal">
-          <div class="svc-tag">Build — Most Requested</div>
-          <h3>Revenue Engine Build</h3>
-          <p class="svc-desc">In 2–3 weeks, we design and implement your complete revenue operating system: stages with exit criteria, CRM fields that capture what matters (not what a methodology says), AI-augmented workflows for your reps, and a forecast model grounded in reality.</p>
-          <div class="svc-meta"><dl><dt>What's different</dt><dd>Your team leaves with AI tools they actually use, not a slide deck they forget.</dd><dt>Deliverable</dt><dd>ICP, stages, CRM schema, AI workflows, pipeline model, forecast</dd><dt>Investment</dt><dd class="svc-price">&euro;5K – &euro;15K</dd></dl></div>
+          <div class="svc-tag">Programme &mdash; Most Requested</div>
+          <h3>Revenue Engine Programme</h3>
+          <p class="svc-desc">A 90-day structured programme to design and install your complete revenue operating system. Month 1: diagnose and design. Month 2: build and implement &mdash; stages, CRM, AI workflows, forecast model. Month 3: coach, transfer, and measure. I lead the engagement and bring in specialists for CRM architecture and AI implementation.</p>
+          <div class="svc-meta"><dl><dt>What's different</dt><dd>Milestone-based delivery with board-ready progress reports. Your team inherits a machine, not a slide deck.</dd><dt>Deliverable</dt><dd>Revenue system blueprint, live CRM with stages and AI workflows, operating cadence, coaching framework, 90-day performance baseline</dd><dt>Investment</dt><dd class="svc-price">&euro;15K &ndash; &euro;40K</dd></dl></div>
         </div>
         <div class="svc-card reveal">
-          <div class="svc-tag">Fractional Leadership</div>
-          <h3>Fractional CRO</h3>
-          <p class="svc-desc">Embedded revenue leadership for companies that need someone who can operate the system, coach the team, own the forecast, and teach people to leverage AI — while making the judgment calls that no tool can automate.</p>
-          <div class="svc-meta"><dl><dt>What's different</dt><dd>I'm in the deals, in the CRM, in the room. Not advising from a distance.</dd><dt>Deliverable</dt><dd>Operating cadence, governance, AI enablement, team coaching, board reporting</dd><dt>Investment</dt><dd class="svc-price">&euro;6K – &euro;20K /month</dd></dl></div>
-        </div>
-        <div class="svc-card reveal">
-          <div class="svc-tag">Board-Level</div>
-          <h3>Board Advisor</h3>
-          <p class="svc-desc">Strategic revenue oversight for founders and boards who need a commercially experienced voice in the room. GTM strategy, investor readiness on the revenue side, pricing and market entry decisions, and partnership due diligence — without the full-time commitment.</p>
-          <div class="svc-meta"><dl><dt>What's different</dt><dd>Board-level pattern recognition from 20+ years across SaaS, fintech, and capital markets — available on your terms.</dd><dt>Cadence</dt><dd>Monthly board attendance, ad-hoc strategic calls, quarterly commercial reviews</dd><dt>Investment</dt><dd class="svc-price">Equity + retainer</dd></dl></div>
+          <div class="svc-tag">Embedded &amp; Board-Level</div>
+          <h3>Commercial Leadership</h3>
+          <p class="svc-desc">For companies that need an operator in the business &mdash; or a commercially experienced voice at board level. Embedded leadership means I'm in the deals, in the CRM, in the room. Board advisory means commercial oversight for PE operating partners and founders navigating growth, turnaround, or exit preparation.</p>
+          <div class="svc-meta"><dl><dt>Embedded</dt><dd>Weekly cadence, pipeline governance, deal reviews, team coaching, forecast ownership, AI enablement. &euro;6K &ndash; &euro;20K /month.</dd><dt>Board advisory</dt><dd>Monthly board attendance, quarterly commercial reviews, PE portfolio oversight, revenue risk evaluation. Equity + retainer.</dd><dt>What's different</dt><dd>I think at company level &mdash; P&amp;L, cost discipline, operational scale &mdash; not just sales function.</dd></dl></div>
         </div>
       </div>
     </div>
@@ -453,9 +482,36 @@
   <!-- CTA (dark) -->
   <section class="cta-band">
     <div class="container">
-      <h2>Looking for an operator, <br>not another advisor?</h2>
-      <p>I build systems, teach teams to leverage AI, and stay accountable to the number. If that's what you need — let's talk.</p>
+      <h2>Looking for an operator who owns the outcome, <br>not just the advice?</h2>
+      <p>I build systems, develop leaders, and stay accountable to the number &mdash; at company level, not just sales function. If that's what you need, let's talk.</p>
       <a href="https://calendly.com/rm-advisory/30min" target="_blank" class="btn-cta">Book a 30-min working session &rarr;</a>
+    </div>
+  </section>
+
+  <!-- FOR INVESTORS (light) -->
+  <section class="section" id="investors">
+    <div class="container">
+      <div class="section-header">
+        <div class="mono">For PE &amp; VC Operating Partners</div>
+        <h2 style="font-weight:400;">Your portfolio company's revenue plan is underperforming. Now what?</h2>
+      </div>
+      <div class="investor-grid">
+        <div class="investor-card">
+          <div class="mono">The Problem</div>
+          <p>Pipeline coverage looks healthy but conversion is poor. The CRO hire hasn't delivered. Stage definitions mean different things to different reps. The board gets a different forecast every month. Sound familiar?</p>
+          <p>Most commercial due diligence focuses on the spreadsheet. The real risk is in the <strong>system underneath it</strong> &mdash; stages, qualification discipline, coaching cadence, and whether leadership can actually operate the revenue engine at scale.</p>
+        </div>
+        <div class="investor-card">
+          <div class="mono">What I Do</div>
+          <p><strong>Commercial assessment</strong> &mdash; Evaluate the GTM system, team capability, forecast reliability, and AI readiness. Board-ready findings within 2 weeks.</p>
+          <p><strong>Revenue engine rebuild</strong> &mdash; 90-day structured programme to install stages, CRM architecture, AI workflows, operating cadence, and coaching discipline. Milestone-based, board-reported.</p>
+          <p><strong>Ongoing oversight</strong> &mdash; Board advisory, quarterly commercial reviews, and portfolio-level GTM pattern recognition across fintech, SaaS, and capital markets.</p>
+        </div>
+      </div>
+      <div class="investor-cta">
+        <p>Full P&amp;L ownership across two companies. 70+ AEs at Salesforce. Five regions. I think at company level, not function level.</p>
+        <a href="https://calendly.com/rm-advisory/30min" target="_blank" class="btn-primary btn-submit">Discuss a portfolio company &rarr;</a>
+      </div>
     </div>
   </section>
 
@@ -465,10 +521,10 @@
       <div class="about-layout">
         <div class="about-text">
           <div class="mono" style="color:var(--light-text-muted);margin-bottom:0.8rem;">About</div>
-          <h2>Two decades in the arena. From trading floors to global GTM.</h2>
-          <p>My career started on the EUREX trading floor in Frankfurt, where you learn fast that <strong>data without judgment is noise</strong>. That principle has shaped everything since — from scaling Salesforce's UK &amp; Ireland commercial business with 70+ AEs, to leading global GTM for blockchain and Big Data fintech companies, to my current work running revenue execution and white-label GTM at a global multi-asset brokerage serving institutional traders and asset managers.</p>
-          <p>The through-line across every role: <strong>building the operating infrastructure that turns effort into predictable revenue</strong>. Sales controlling, performance management, CRM architecture, pipeline governance, dashboards that give regional leaders real visibility — this is the work that compounds.</p>
-          <p>I take the best of proven frameworks — the qualification rigour of MEDDPICC, the pain-based selling of Sandler, the stage discipline of modern RevOps — strip out the dogma, and build a system designed for <em>your</em> specific business. Whether that's a 5-person fintech or a 200-person brokerage with offices across the Middle East, Europe, and beyond.</p>
+          <h2>Two decades in the arena. From trading floors to global commercial leadership.</h2>
+          <p>My career started on the CBOE trading floor in Chicago, then moved to EUREX in Frankfurt &mdash; where you learn fast that <strong>data without judgment is noise</strong>. From there I managed global accounts at Reuters (now LSEG), competing head-to-head with Bloomberg in the institutional data market &mdash; an environment where every deal is high-stakes, multi-threaded, and won on relationships, not slide decks. That principle has shaped everything since &mdash; from scaling Salesforce's UK &amp; Ireland commercial business with 70+ AEs, to leading global GTM for blockchain and Big Data fintech companies, to my current work running revenue execution and white-label GTM at a global multi-asset brokerage serving institutional traders and asset managers.</p>
+          <p>Along the way, I've held <strong>full P&amp;L ownership across two companies</strong> &mdash; a PE-backed global software business and a multi-asset brokerage &mdash; managing not just revenue, but cost discipline, margin management, capital allocation, and the operational trade-offs that come with running a commercial organisation at scale.</p>
+          <p>The through-line across every role: <strong>building the operating infrastructure that turns effort into predictable, repeatable revenue</strong>. Sales controlling, performance management, CRM architecture, pipeline governance, dashboards that give regional leaders real visibility &mdash; this is the work that compounds. Whether that's a 5-person fintech or a 200-person brokerage with offices across the Middle East, Europe, and beyond.</p>
           <div class="about-quote">"AI is the most powerful tool revenue teams have ever had. But a tool without an operator is just expensive furniture."</div>
         </div>
         <div class="sidebar">
@@ -478,10 +534,10 @@
           </div>
           <div class="sidebar-box">
             <h4>What I Build</h4>
-            <div class="sidebar-item"><h5>AI-Augmented Revenue Systems</h5><p>Workflows where AI handles research, prep &amp; hygiene — humans own strategy &amp; relationships</p></div>
+            <div class="sidebar-item"><h5>AI-Augmented Revenue Systems</h5><p>Workflows where AI handles research, prep &amp; hygiene &mdash; humans own strategy &amp; relationships</p></div>
             <div class="sidebar-item"><h5>Sales Controlling &amp; Performance Management</h5><p>Dashboards, operating cadence, regional visibility, underperformance identification</p></div>
-            <div class="sidebar-item"><h5>Stage Architecture &amp; CRM Design</h5><p>Exit criteria, qualification fields, pipeline governance — no methodology worship</p></div>
-            <div class="sidebar-item"><h5>Skill Capacity &amp; Team Development</h5><p>Discovery, multi-threading, champion development, executive alignment</p></div>
+            <div class="sidebar-item"><h5>Stage Architecture &amp; CRM Design</h5><p>Exit criteria, qualification fields, pipeline governance &mdash; no methodology worship</p></div>
+            <div class="sidebar-item"><h5>Commercial P&amp;L Leadership</h5><p>Full ownership of revenue, cost discipline, margin management, and operational scale</p></div>
           </div>
           <div class="sidebar-box">
             <h4>Languages</h4>
@@ -525,7 +581,7 @@
           </div>
           <dl>
             <div class="c-detail"><dt>Email</dt><dd><a href="mailto:rodrigo.medgenberg@gmail.com">rodrigo.medgenberg@gmail.com</a></dd></div>
-            <div class="c-detail"><dt>Based in</dt><dd>Dublin, Ireland — working globally</dd></div>
+            <div class="c-detail"><dt>Based in</dt><dd>Dublin, Ireland &mdash; working globally</dd></div>
             <div class="c-detail"><dt>Book directly</dt><dd><a href="https://calendly.com/rm-advisory/30min" target="_blank">Schedule via Calendly &rarr;</a></dd></div>
             <div class="c-detail"><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/rmedgenberg/" target="_blank">Connect on LinkedIn &rarr;</a></dd></div>
           </dl>
@@ -534,7 +590,7 @@
           <form class="contact-form" id="contactForm" action="https://formspree.io/f/mreyzoge" method="POST">
             <div class="fg"><label for="name">Name</label><input type="text" id="name" name="name" required></div>
             <div class="fg"><label for="email">Email</label><input type="email" id="email" name="email" required></div>
-            <div class="fg"><label for="interest">I'm interested in</label><select id="interest" name="interest"><option value="">Select an option</option><option value="audit">Revenue System Audit</option><option value="build">Revenue Engine Build</option><option value="fractional">Fractional CRO</option><option value="board">Board Advisory</option><option value="cro-role">Full-time CRO Opportunity</option><option value="other">Something else</option></select></div>
+            <div class="fg"><label for="interest">I'm interested in</label><select id="interest" name="interest"><option value="">Select an option</option><option value="audit">Revenue System Audit</option><option value="programme">Revenue Engine Programme</option><option value="embedded">Embedded Commercial Leadership</option><option value="board">Board Advisory</option><option value="ceo-role">CEO / Operating Partner Opportunity</option><option value="other">Something else</option></select></div>
             <div class="fg"><label for="message">Tell me about your situation</label><textarea id="message" name="message" placeholder="Stage, team size, current GTM challenge, how your team uses AI today..."></textarea></div>
             <button type="submit" class="btn-primary btn-submit">Book a 30-min session &rarr;</button>
           </form>
