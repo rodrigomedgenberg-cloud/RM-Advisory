@@ -10,23 +10,24 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --dark-bg: #0b0b0b;
-      --dark-bg-raised: #111111;
-      --dark-text: #e8e5e0;
-      --dark-text-secondary: #b0ada8;
-      --dark-text-muted: #7d7a75;
-      --dark-border: #222222;
-      --light-bg: #faf8f5;
-      --light-bg-raised: #f3f0ec;
+      --dark-bg: #0c0c0b;
+      --dark-bg-raised: #141412;
+      --dark-text: #ede9e2;
+      --dark-text-secondary: #a8a49e;
+      --dark-text-muted: #8f8b86;
+      --dark-border: #252420;
+      --light-bg: #f9f7f3;
+      --light-bg-raised: #f1ede7;
       --light-bg-card: #ffffff;
       --light-bg-card-hover: #f8f6f2;
-      --light-text: #1a1816;
-      --light-text-secondary: #575248;
-      --light-text-muted: #847e75;
-      --light-border: #e2ddd6;
-      --light-border-subtle: #ece8e2;
-      --accent: #c9a06c;
-      --accent-dim: rgba(201,160,108,0.08);
+      --light-text: #1a1916;
+      --light-text-secondary: #56524a;
+      --light-text-muted: #807a71;
+      --light-border: #e0dbd2;
+      --light-border-subtle: #eae6df;
+      --accent: #c4995f;
+      --accent-on-dark: #d4aa72;
+      --accent-dim: rgba(196,153,95,0.10);
       --font-display: 'Fraunces', Georgia, serif;
       --font-body: 'Inter', -apple-system, sans-serif;
       --font-mono: 'DM Mono', monospace;
@@ -45,7 +46,7 @@
     ::selection{background:var(--accent);color:#fff}
     .container{max-width:1140px;margin:0 auto;padding:0 2rem}
     .section{padding:7rem 0}
-    .mono{font-family:var(--font-mono);font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase}
+    .mono{font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase}
     .divider{height:1px;background:var(--light-border-subtle);border:none}
 
     /* NAV */
@@ -63,7 +64,7 @@
 
     /* HERO (dark) */
     .hero{background:var(--dark-bg);padding:12rem 0 6rem;position:relative;overflow:hidden}
-    .hero::before{content:'';position:absolute;top:-10%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(201,160,108,0.07) 0%,transparent 60%);pointer-events:none}
+    .hero::before{content:'';position:absolute;top:-10%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(196,153,95,0.09) 0%,transparent 60%);pointer-events:none}
     .hero-eyebrow{font-family:var(--font-mono);font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);margin-bottom:2rem;display:flex;align-items:center;gap:1rem}
     .hero-eyebrow::before{content:'';width:32px;height:1px;background:var(--accent)}
     .hero h1{font-family:var(--font-display);font-size:clamp(2.8rem,5.5vw,4.8rem);font-weight:400;line-height:1.08;max-width:820px;margin-bottom:2.2rem;color:var(--dark-text)}
@@ -74,7 +75,7 @@
     .hero-kicker em{font-style:normal;color:var(--accent)}
     .hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
     .btn-h-primary{display:inline-flex;align-items:center;gap:0.5rem;background:var(--accent);color:var(--dark-bg);font-family:var(--font-mono);font-size:0.68rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;padding:0.9rem 1.8rem;text-decoration:none;border:none;cursor:pointer;transition:all 0.25s;border-radius:999px}
-    .btn-h-primary:hover{background:#d4ad7a}
+    .btn-h-primary:hover{background:#ceaa76}
     .btn-h-ghost{display:inline-flex;align-items:center;gap:0.5rem;background:transparent;color:var(--dark-text-secondary);font-family:var(--font-mono);font-size:0.68rem;letter-spacing:0.06em;text-transform:uppercase;padding:0.9rem 1.8rem;text-decoration:none;border:1px solid var(--dark-border);transition:all 0.2s;border-radius:999px}
     .btn-h-ghost:hover{color:var(--dark-text);border-color:var(--dark-text-muted)}
 
@@ -82,7 +83,7 @@
     .cred-bar{background:var(--dark-bg);border-top:1px solid rgba(255,255,255,0.05);padding:2.5rem 0 3rem}
     .cred-row{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:2rem}
     .cred-item{text-align:center;flex:1;min-width:130px}
-    .cred-num{font-family:var(--font-display);font-size:2.8rem;font-weight:400;color:var(--dark-text);line-height:1;margin-bottom:0.5rem}
+    .cred-num{font-family:var(--font-display);font-size:clamp(1.8rem,4vw,2.8rem);font-weight:400;color:var(--dark-text);line-height:1;margin-bottom:0.3rem}
     .cred-num--sm{font-size:1.8rem}
     .cred-label{font-family:var(--font-mono);font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--dark-text-secondary)}
     .cred-sep{width:1px;height:36px;background:var(--dark-border);flex-shrink:0}
@@ -156,7 +157,7 @@
     .cta-band h2{font-family:var(--font-display);font-size:clamp(2rem,4vw,3rem);font-weight:300;margin-bottom:1rem;color:var(--dark-text)}
     .cta-band p{color:var(--dark-text-secondary);font-size:1rem;margin-bottom:2.5rem;max-width:520px;margin-left:auto;margin-right:auto;line-height:1.7;font-weight:300}
     .btn-cta{display:inline-flex;align-items:center;gap:0.5rem;background:var(--accent);color:var(--dark-bg);font-family:var(--font-mono);font-size:0.68rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;padding:0.9rem 1.8rem;text-decoration:none;border:none;cursor:pointer;transition:all 0.25s;border-radius:999px}
-    .btn-cta:hover{background:#d4ad7a}
+    .btn-cta:hover{background:#ceaa76}
 
     /* INVESTORS */
     .investor-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--light-border);border:1px solid var(--light-border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
@@ -237,6 +238,7 @@
     .reveal.visible{opacity:1;transform:translateY(0)}
 
     @media(max-width:1024px){
+      .section{padding:5rem 0}
       .split-section,.phil-grid,.track-grid,.about-layout,.contact-layout,.routing-grid,.investor-grid{grid-template-columns:1fr}
       .svc-grid,.outcomes-grid{grid-template-columns:1fr 1fr}
       .split-col:first-child{border-right:none;border-bottom:1px solid var(--light-border)}
